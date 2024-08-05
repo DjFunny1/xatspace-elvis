@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./java.js" defer></script>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
+</head>
+
+<body>
+    <svg viewbox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <style type="text/css">
+                .wave {
+                    animation: wave 8s linear infinite;
+                }
+                .wave1 {
+                    animation: wave1 10s linear infinite;
+                }
+                .wave2 {
+                    animation: wave2 12s linear infinite;
+                }
+                @keyframes wave {
+                    0% {
+                    transform: translateX(0%);
+                }
+                    100% {
+                    transform: translateX(100%);
+                }
+                }
+                @keyframes wave1 {
+                    0% {
+                    transform: scaleY(1.2) translateX(0%);
+                }
+                    100% {
+                    transform: scaleY(1.2) translateX(100%);
+                }
+                }
+                @keyframes wave2 {
+                    0% {
+                    transform: scaleY(.8) translateX(0%);
+                }
+                    100% {
+                    transform: scaleY(.8) translateX(100%);
+                }
+                }
+            </style>
+            <path id='sineWave' fill="#0099ff" fill-opacity="0.2" d="M0,160 C320,300,420,300,740,160 C1060,20,1120,20,1440,160 V0 H0" />
+        </defs>
+            <use class="wave" href="#sineWave" />
+            <use class="wave" x="-100%" href="#sineWave" />
+            <use class="wave1" href="#sineWave" />
+            <use class="wave1" x="-100%" href="#sineWave" />
+            <use class="wave2" href="#sineWave" />
+            <use class="wave2" x="-100%" href="#sineWave" />
+    </svg>
+<header>
+        <nav>
+            <div class="navbar-navegacion">
+                <nav class="navegacion">
+                        <a href="https://xat.me/elv1s">
+                        <li class="inicio">Inicio</li> </a>
+                        <button id="open">Media</button>
+                        <div class="modal-container" id="modal_container">
+                            <div class="modal">
+                                <h1>Mis Videos</h1>
+                                <br>
+                                <p>
+                                    Mis videos favoritos... ♪♪
+                                </p>
+                                <br>
+                                <div>
+                                    <iframe width="420" height="315" src="https://www.youtube.com/embed/YnygTVnVIoY?si=KEQ5hFS6KZJQHoR6"></iframe>
+                                    <br>
+                                    <br>
+                                    <iframe width="420" height="315" src="https://www.youtube.com/embed/rtOhmq8Lya8?si=LMhsbQoi7lFa8X87"></iframe>
+                                    <br>
+                                    <br>
+                                    </div>
+                                <div id="close" class="xclose"><img width="20" height="20" src="./media/xclose.png"/></div>
+                            </div>
+                        </div>
+                        <button id="firma" class="firma">Acerca de mí</button>
+                        <div class="firma-container" id="firma_container">
+                            <div class="firma1">
+                                <h1 class="ftitulo">Acerca de mi</h1>
+                                <br>
+                                <p>Me ha gustado ser diseñador, ya que cuando tenía 12 años me llamó mucho la atención.</p>
+                                <br>
+                                <p>Poco a poco fuí aprendiendo técnicas de diseño, incluso desde que xat era un procesador de imágenes.</p>
+                                <br>
+                                <p>Actualmente me dedico a realizar diseños en xat.com. Si quieres, puedes revisar mi <a href="https://www.flickr.com/photos/elvisbarahona" target="_blank">galeria</a>, veras diseños para chats, fondos de privado, etc.</p>
+                                <br>
+                                <br>
+                                <h1 class="fdj">ELV1S (1454394476)</h1>
+                                <img class="flag" height="35" width="35" src="https://cdn.pixabay.com/animation/2022/08/09/03/40/03-40-44-304_512.gif">
+                                <br>
+                                <div id="close1" class="xclose"><img width="20" height="20" src="./media/xclose.png"/></div>
+                            </div>
+                        </div>
+                    </ul>
+            </div>
+            <div class="navbar-busqueda">
+                <div class="navbar_input_search">
+                    <span>
+                        <img class="searchicon" src="./imagenes/icons-search.png" alt="" />
+                    </span>
+                    <input class="input" type="text" placeholder="🔥 El querubin de xat.com! 🔥 I know you know I'm too sexy 🫦" >
+                </div>
+            </div>
+            <div class="navbar-perfil">
+                <a href="https://xat.com/musica_vip" target="_blank"><img class="iconbell" width="65" height="50" src="./media/msgbubble.png" alt="" /></a>
+                <a href="https://forum.xat.com/profile/51421/" target="_blank"><img class="iconmsg" width="63" height="50" src="./media/xatforum-removebg-preview.png" alt="" /></a>
+                <div class="iconperfil">
+                    <a href="https://www.flickr.com/photos/elvisbarahona" target="_blank"><img class="iconperfil" src="./media/flickr1.jpg"/></a>
+                </div>
+                <div id="options"><img width="50" height="50" src="https://xatimg.com/image/23L0728N2L62.gif"/> </div>
+                <div id="optionscont" class="options_container">
+                    <div class="options1">
+                        <h1 class="tmb">MARRIED:</h1>
+                        <br>
+                        <h1><a href="https://xat.me/ezze" target="_blank">
+                            <img class="effecttmb" width="80" height="80" src="https://xatimg.com/image/QvOMqHiHNBaJ.gif"></a>
+                        <h1 class="selene1">Ezze (68788464)</h1>
+                        </h1>
+                        <br>
+                        <h1 class="ta">Amistades:</h1>
+                        <div class="friends">
+                        <br>
+                        <li>
+                        <h1><a href="https://xat.me/bori" target="_blank">
+                            <img class="effectta1" width="80" height="80" src="https://xatimg.com/image/p6slHAKo8lWJ.png"></a>
+                            <p class="bori1">Amyy (1000033)</p>
+                        </h1>
+                        <br>
+                        <br>
+                        <h1><a href="https://xat.me/gaab" target="_blank">
+                            <img class="effectta2" width="80" height="80" src="https://u.cubeupload.com/Angeless1093/SquareQuick202212121.jpg"></a>
+                            <p class="gaab1">AngeLess1093 (1541324786)</p>
+                        </h1>
+                        <br>
+                        <br>
+                        <h1><a href="https://xat.me/kimy" target="_blank">
+                            <img class="effectta3" width="80" height="80" src="https://xatimg.com/image/Ubrrjq0fohvO.gif"></a>
+                            <p class="trunks1">DjFunny (161735814)</p>
+                        </h1>
+                        </li>
+                        <br>
+                        </div>
+                        <h1 class="rs">Redes Sociales:</h1>
+                        <br>
+                        <h1>
+                            <a class="r1" href="https://www.instagram.com/eduarbarahona/" target="_blank">
+                                <img width="60" height="60" src="./media/instagram-logo.png"></a>
+                            <a class="r2" href="https://www.facebook.com/Eduar.Barahona.G/" target="_blank">
+                                <img width="60" height="60" src="./media/facebook-logo.png"></a>
+                            <a class="r5" href="https://www.tiktok.com/@ed.barahona2" target="_blank">
+                                <img width="55" height="55" src="./media/tiktok-logo.png"></a>
+                        </h1>                       
+                        <br>
+                        <div id="close2" class="xclose"><img width="20" height="20" src="./media/xclose.png"/></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+</header>
+<main>
+        <section class="pin_contenedor">
+            <article class="pin pin_pequenio">
+                <iframe class="player" src="//player.radioforge.com/v2/shoutcast.html?radiolink=https%3A%2F%2Ftechnoplayerserver.net%2F8016%2Fstream&radiotype=shoutcast2&bcolor=183865,4B83D2&image=https://xatimg.com/image/ssosGw2g8ulc.png&facebook=https://ayuda.xatblog.net/djs/&twitter=https://ayuda.xatblog.net/djs/&title=Radio Hispanohablante&artist=DjFunny" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" style="max-width: 100%;" width="367" height="227"></iframe>
+            </article>
+            <article class="pin pin_mediano">
+                <img class="pin_contenido" src="./media/1.jpg" id="imagen1">
+                <div class="pin_botones"></div>
+            </article>
+            <article class="pin pin_grande">
+                <img class="pin_contenido" src="./media/2.jpg" id="imagen2">
+                <div class="pin_botones"></div>
+            </article>
+            <article class="pin pin_pequenio">
+                <img class="pin_contenido" src="./media/4.jpg" alt="imagen3">
+                <div class="pin_botones"></div>
+            </article>
+            <article class="pin pin_mediano">
+                <img class="pin_contenido" src="./media/3.jpg" alt="imagen 4">
+                <div class="pin_botones"></div>
+            </article>
+            <article class="pin pin_grande">
+                <img class="pin_contenido" src="./media/5.jpg" alt="imagen 5">
+                <div class="pin_botones"></div>
+            </article>
+            <article class="pin pin_pequenio">
+                <img class="pin_contenido" src="./media/6.jpg" alt="imagen 6">
+                <div class="pin_botones"></div>
+            </article>
+            <article class="pin pin_mediano">
+                <img class="pin_contenido" src="./media/7.jpg" alt="imagen 7">
+                <div class="pin_botones"></div>
+            </article>
+            <article class="pin pin_grande">
+                <img class="pin_contenido" src="./media/8.jpg" alt="imagen 8">
+                <div class="pin_botones"></div>
+            </article>
+            <article class="pin pin_pequenio">
+                <img class="pin_contenido" src="./media/9.jpg" alt="imagen 9">
+                <div class="pin_botones"></div>
+            </article>
+            <article class="pin pin_mediano">
+                <img class="pin_contenido" src="./media/10.jpg" alt="imagen 10">
+                <div class="pin_botones"></div>
+            </article>
+            <article class="pin pin_grande">
+                <img class="pin_contenido" src="./media/11.jpg" alt="imagen 11">
+                <div class="pin_botones"></div>
+            </article>
+            <article class="pin pin_pequenio">
+                <img class="pin_contenido" src="./media/12.jpg" alt="imagen 12">
+                <div class="pin_botones"></div>
+            </article>
+            <article class="pin pin_mediano">
+                <img class="pin_contenido" src="./media/13.jpg" alt="imagen 13">
+                <div class="pin_botones"></div>
+            </article>
+            <article class="pin pin_grande">
+                <img class="pin_contenido" src="./media/14.jpg" alt="imagen 14">
+                <div class="pin_botones"></div>
+            </article>
+            <article class="pin pin_pequenio">
+                <img class="pin_contenido" src="./media/18.jpg" alt="imagen 15">
+                <div class="pin_botones"></div>
+            </article>
+            <article class="pin pin_mediano">
+                <img class="pin_contenido" src="./media/17.jpg" alt="imagen 17">
+                <div class="pin_botones"></div>
+            </article>
+            <article class="pin pin_grande">
+                <img class="pin_contenido" src="./media/15.jpg" alt="imagen 18">
+                <div class="pin_botones"></div>
+            </article>
+            <article class="pin pin_pequenio">
+                <img class="pin_contenido" src="./media/19.jpg" alt="imagen 19">
+                <div class="pin_botones"></div>
+            </article>
+            <article class="pin pin_mediano">
+                <img class="pin_contenido" src="./media/20.jpg" alt="imagen 20">
+                <div class="pin_botones"></div>
+            </article>
+            <article class="pin pin_pequenio">
+                <img class="pin_contenido" src="./media/21.jpg" alt="imagen 21">
+                <div class="pin_botones"></div>
+            </article>
+        </section>
+</main>
+<footer class="footer">
+        <div>
+            Created by DjFunny (161735814)
+        </div>
+</footer>
+</body>
+
+</html>
